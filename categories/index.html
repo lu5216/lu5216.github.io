@@ -30,7 +30,7 @@
 <meta property="og:description" content="I try anything once!">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2024-02-26T08:42:06.000Z">
-<meta property="article:modified_time" content="2024-02-26T08:44:01.893Z">
+<meta property="article:modified_time" content="2024-02-27T13:54:27.893Z">
 <meta property="article:author" content="醉影独成空">
 <meta name="twitter:card" content="summary">
 
@@ -211,6 +211,11 @@
 
           </div>
           
+    
+  <div class="comments">
+    <div id="lv-container" data-id="city" data-uid="MTAyMC81OTU2Mi8zNjAyNA=="></div>
+  </div>
+  
 
 <script>
   window.addEventListener('tabs:register', () => {
@@ -281,6 +286,9 @@
   <div class="links-of-author motion-element">
       <span class="links-of-author-item">
         <a href="https://github.com/lu5216" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;lu5216" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:2890481787@qq.com" title="E-Mail → mailto:2890481787@qq.com" rel="noopener" target="_blank"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
       </span>
   </div>
 
@@ -445,6 +453,21 @@ $(document).ready(function() {
 
   
 
+<script>
+NexT.utils.loadComments(document.querySelector('#lv-container'), () => {
+  window.livereOptions = {
+    refer: location.pathname.replace(CONFIG.root, '').replace('index.html', '')
+  };
+  (function(d, s) {
+    var j, e = d.getElementsByTagName(s)[0];
+    if (typeof LivereTower === 'function') { return; }
+    j = d.createElement(s);
+    j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+    j.async = true;
+    e.parentNode.insertBefore(j, e);
+  })(document, 'script');
+});
+</script>
 
 </body>
 </html>
