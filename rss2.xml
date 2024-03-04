@@ -9,11 +9,11 @@
     <atom:link href="http://example.com/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>I try anything once!</description>
-    <pubDate>Mon, 04 Mar 2024 11:02:23 GMT</pubDate>
+    <pubDate>Mon, 04 Mar 2024 11:05:51 GMT</pubDate>
     <generator>http://hexo.io/</generator>
     
     <item>
-      <title></title>
+      <title>Git上传项目</title>
       <link>http://example.com/2024/03/04/git%E4%B8%8A%E4%BC%A0/</link>
       <guid>http://example.com/2024/03/04/git%E4%B8%8A%E4%BC%A0/</guid>
       <pubDate>Mon, 04 Mar 2024 10:55:21 GMT</pubDate>
