@@ -9,28 +9,29 @@
     <atom:link href="http://example.com/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>I try anything once!</description>
-    <pubDate>Thu, 29 Feb 2024 07:04:04 GMT</pubDate>
+    <pubDate>Sat, 02 Mar 2024 09:59:16 GMT</pubDate>
     <generator>http://hexo.io/</generator>
     
     <item>
-      <title>Hello World！！！</title>
-      <link>http://example.com/2024/02/26/hello-world/</link>
-      <guid>http://example.com/2024/02/26/hello-world/</guid>
+      <title>我的博客</title>
+      <link>http://example.com/2024/02/26/hello-blog/</link>
+      <guid>http://example.com/2024/02/26/hello-blog/</guid>
       <pubDate>Mon, 26 Feb 2024 07:51:31 GMT</pubDate>
       
         
         
-      <description>&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt; for</description>
+      <description>&lt;p&gt;欢迎来的我的博客，这是一个next主题的博客，页面简约。&lt;/p&gt;
+&lt;h2 id=&quot;博客&quot;&gt;&lt;a href=&quot;#博客&quot; class=&quot;headerlink&quot; title=&quot;博客&quot;&gt;&lt;/a&gt;博客&lt;/h2&gt;&lt;h3 id=&quot;博客简介&quot;&gt;&lt;a href=&quot;#博客简介&quot; class=&quot;</description>
         
       
       
       
-      <content:encoded><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content:encoded>
+      <content:encoded><![CDATA[<p>欢迎来的我的博客，这是一个next主题的博客，页面简约。</p><h2 id="博客"><a href="#博客" class="headerlink" title="博客"></a>博客</h2><h3 id="博客简介"><a href="#博客简介" class="headerlink" title="博客简介"></a>博客简介</h3><p>本博客由 <a href="https://hexo.io/">Hexo</a> &amp; <a href="https://theme-next.org/">NexT.Gemini</a> 强力驱动。</p><h3 id="Hexo简介"><a href="#Hexo简介" class="headerlink" title="Hexo简介"></a>Hexo简介</h3><p><a href="https://hexo.io/zh-cn/docs/">Hexo官方文档</a></p>]]></content:encoded>
       
       
       
       
-      <comments>http://example.com/2024/02/26/hello-world/#disqus_thread</comments>
+      <comments>http://example.com/2024/02/26/hello-blog/#disqus_thread</comments>
       
     </item>
     
