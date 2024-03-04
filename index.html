@@ -278,6 +278,164 @@
   
   
   
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2024/03/04/git%E4%B8%8A%E4%BC%A0/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.png">
+      <meta itemprop="name" content="醉影独成空">
+      <meta itemprop="description" content="I try anything once!">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="网吧">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2024/03/04/git%E4%B8%8A%E4%BC%A0/" class="post-title-link" itemprop="url">未命名</a>
+        </h2>
+
+        <div class="post-meta">
+
+	
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2024-03-04 18:55:21 / 修改时间：18:53:18" itemprop="dateCreated datePublished" datetime="2024-03-04T18:55:21+08:00">2024-03-04</time>
+            </span>
+
+          <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>1.3k</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="far fa-clock"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>1 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="Git上传项目"><a href="#Git上传项目" class="headerlink" title="Git上传项目"></a>Git上传项目</h1><h3 id="1、为GitHub账户设置SSH-Key"><a href="#1、为GitHub账户设置SSH-Key" class="headerlink" title="1、为GitHub账户设置SSH Key"></a>1、为GitHub账户设置SSH Key</h3><h5 id="1-1-检测是否已生成密钥"><a href="#1-1-检测是否已生成密钥" class="headerlink" title="1.1 检测是否已生成密钥"></a>1.1 检测是否已生成密钥</h5><p>第一步，检测是否已经生成了密钥，ls出现id_rsa与id_rsa.pub则已生成密钥。</p>
+<p><img src="/$%7Bimg%7D/20240304-1620.png" alt="image"></p>
+<p>id_rsa与id_rsa.pub可以在目录C:\Users\用户名\.ssh里面找到。</p>
+<h5 id="1-2-生成SSH-Key"><a href="#1-2-生成SSH-Key" class="headerlink" title="1.2 生成SSH Key"></a>1.2 生成SSH Key</h5><p>已经有了密钥可以跳过。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ ssh-keygen -t rsa -C “xxxxxx@qq.com”</span><br></pre></td></tr></table></figure>
+
+<p>可以直接回车生成密钥。</p>
+<p><img src="/$%7Bimg%7D/20240304-1633.png" alt="image"></p>
+<p>生成成功后，在目录C:\Users\用户名\.ssh里，打开id_rsa.pub，复制ssh key公钥。</p>
+<h5 id="1-3-为GitHub账号配置SSH-Key"><a href="#1-3-为GitHub账号配置SSH-Key" class="headerlink" title="1.3 为GitHub账号配置SSH Key"></a>1.3 为GitHub账号配置SSH Key</h5><p>点击头像，找到Setting，<strong>打开设置</strong>。</p>
+<img src="$%7Bimg%7D/20240304-1641.png" alt="image" style="zoom: 50%;" />
+
+<p>找到 <strong>SSH and GPG Keys</strong>，点击 <strong>SSH Keys</strong> 右侧的 <strong>New SSH Key</strong> 新增密钥，填上标题。</p>
+<p><img src="/$%7Bimg%7D/20240304-1643.png" alt="image"></p>
+<p>填上标题和密钥，点击 <strong>Add SSH Key</strong>。</p>
+<img src="$%7Bimg%7D/20240304-1649.png" alt="image" style="zoom:50%;" />
+
+<p>验证身份后，github账号的SSH Keys配置完成。</p>
+<p><img src="/$%7Bimg%7D/20240304-1651.png" alt="image"></p>
+<h3 id="2、上传本地项目到GitHub"><a href="#2、上传本地项目到GitHub" class="headerlink" title="2、上传本地项目到GitHub"></a>2、上传本地项目到GitHub</h3><h5 id="2-1-建立本地仓库"><a href="#2-1-建立本地仓库" class="headerlink" title="2.1 建立本地仓库"></a>2.1 建立本地仓库</h5><p>到自定文件夹下，鼠标右击进入 git bash，执行指令：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git init</span><br></pre></td></tr></table></figure>
+
+<p><img src="/$%7Bimg%7D/20240304-1700.png" alt="image"></p>
+<p>初始化成功后，项目里多出一个隐藏文件夹 .git</p>
+<p><img src="/$%7Bimg%7D/20240304-1702.png" alt="image"></p>
+<p>将需要提交上传的项目放到该目录下</p>
+<p>将所有文件添加到仓库，执行指令：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git add .</span><br></pre></td></tr></table></figure>
+
+<p>将文件提交到仓库，双引号内是提交注释，执行指令：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git commit -m &quot;提交文件&quot;</span><br></pre></td></tr></table></figure>
+
+<p><img src="/$%7Bimg%7D/20240304-1710.png" alt="image"></p>
+<p>到此，本地仓库创建完成。</p>
+<h5 id="2-2-关联GitHub"><a href="#2-2-关联GitHub" class="headerlink" title="2.2 关联GitHub"></a>2.2 关联GitHub</h5><p>到GitHub创建的项目下复制SSH地址。</p>
+<img src="$%7Bimg%7D/20240304-1713.png" alt="image" style="zoom:50%;" />
+
+<p>执行指令：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git remote add origin git@github.com:lu5216/subject.git</span><br></pre></td></tr></table></figure>
+
+<h5 id="2-3-上传本地文件"><a href="#2-3-上传本地文件" class="headerlink" title="2.3 上传本地文件"></a>2.3 上传本地文件</h5><p>执行指令：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git push -u origin master</span><br></pre></td></tr></table></figure>
+
+<p>或</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git push -u origin master -f</span><br></pre></td></tr></table></figure>
+
+
+
+
+
+
+
+
+
+<h3 id="3、各种上传问题"><a href="#3、各种上传问题" class="headerlink" title="3、各种上传问题"></a>3、各种上传问题</h3><h5 id="3-1-当上传的文件过大时（超过100MB），报错如下："><a href="#3-1-当上传的文件过大时（超过100MB），报错如下：" class="headerlink" title="3.1 当上传的文件过大时（超过100MB），报错如下："></a>3.1 当上传的文件过大时（超过100MB），报错如下：</h5><img src="$%7Bimg%7D/20240304-1727.png"/>
+
+<p>解决方法：</p>
+<p>下载 <a target="_blank" rel="noopener" href="https://git-lfs.com/">Git-LFS</a> ，并安装到git目录下D:\Git\Git\bin\Git LFS。</p>
+<p>进给安装后的目录，打开git bash，执行指令（这个命令只需执行这一次即可）：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git lfs install  #安装大文件上传应用 </span><br></pre></td></tr></table></figure>
+
+<p>到仓库目录，打开 GitBash，追踪需要上传的大文件</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git lfs track *  #追踪要上传的大文件，*表示路径下的所有文件 </span><br></pre></td></tr></table></figure>
+
+<p>添加要上传的文件属性</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git add .gitattributes   #添加先上传的属性文件</span><br></pre></td></tr></table></figure>
+
+<p>上传属性文件</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git commit -m &quot;first commit&quot;   #添加属性文件上传的说明</span><br><span class="line">git remote add origin git@github.com:lu5216/subject.git   #建立本地和Github仓库的链接 </span><br><span class="line">git push -u origin main        #上传属性文件</span><br></pre></td></tr></table></figure>
+
+<p>接下来按常规步骤</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git add .                      #添加要上传的大文件</span><br><span class="line">git commit -m &quot;Git LFS commit&quot; #添加大文件上传的说明 </span><br><span class="line">git push origin master         #上传大文件</span><br></pre></td></tr></table></figure>
+
+<p>3.2、error: failed to push some refs to</p>
+<img src="$%7Bimg%7D/20240304 -1840.png"/>
+
+<p>问题原因：远程库与本地库不一致造成的</p>
+<p>解决办法：将远程库更新合并到本地库，执行命令：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git pull --rebase origin main</span><br></pre></td></tr></table></figure>
+
+<p>最后执行命令：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git push -u origin main</span><br></pre></td></tr></table></figure>
+
+
+      
+    </div>
+
+    
+    
+    
+
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
 
   
 
@@ -346,7 +504,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">1</span>
+          <span class="site-state-item-count">2</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -404,7 +562,7 @@
     <span class="post-meta-item-icon">
       <i class="fa fa-chart-area"></i>
     </span>
-    <span title="站点总字数">0k</span>
+    <span title="站点总字数">1k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
@@ -416,7 +574,7 @@
 
 <div class="theme-info">
   <div class="powered-by"></div>
-  <span class="post-count">博客全站共47字</span>
+  <span class="post-count">博客全站共752字</span>
 </div>
 
 
