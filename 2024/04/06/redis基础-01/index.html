@@ -36,7 +36,7 @@
 <meta property="og:image" content="http://example.com/images/%24%7Bimg%7D/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202024-04-06%20215315.png">
 <meta property="og:image" content="http://example.com/images/%24%7Bimg%7D/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202024-04-06%20215315.png">
 <meta property="article:published_time" content="2024-04-06T14:35:46.902Z">
-<meta property="article:modified_time" content="2024-04-07T02:14:58.443Z">
+<meta property="article:modified_time" content="2024-04-07T02:26:51.772Z">
 <meta property="article:author" content="醉影独成空">
 <meta property="article:tag" content="redis">
 <meta name="twitter:card" content="summary">
@@ -242,7 +242,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2024-04-07 10:14:58" itemprop="dateModified" datetime="2024-04-07T10:14:58+08:00">2024-04-07</time>
+                <time title="修改时间：2024-04-07 10:26:51" itemprop="dateModified" datetime="2024-04-07T10:26:51+08:00">2024-04-07</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -267,7 +267,7 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>2.4k</span>
+              <span>2.7k</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
@@ -312,12 +312,12 @@
 
 <h5 id="2-4-启动redis-server-服务器"><a href="#2-4-启动redis-server-服务器" class="headerlink" title="2.4 启动redis-server 服务器"></a>2.4 启动redis-server 服务器</h5><p>cd 进入到你安装的redis 目录下， 我的是&#x2F;usr&#x2F;local&#x2F;redis</p>
 <p>命令行输入ll，查看当前目录如下图所示，只有bin文件</p>
-<p>![image](&#x2F;images&#x2F;%24%7Bimg%7D&#x2F;屏幕截图 2024-04-06 214624.png)</p>
+<p>![image](“&#x2F;images&#x2F;%24%7Bimg%7D&#x2F;屏幕截图 2024-04-06 214624.png” alt&#x3D;”image” &#x2F;)</p>
 <p>命令窗输入：</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cd bin   // 进入bin文件</span><br><span class="line">ll</span><br></pre></td></tr></table></figure>
 
 <p>目录如下所示（redis.conf除外，后面配置）</p>
-<p>![image](&#x2F;images&#x2F;%24%7Bimg%7D&#x2F;屏幕截图 2024-04-06 214906.png)</p>
+<p>![image](“&#x2F;images&#x2F;%24%7Bimg%7D&#x2F;屏幕截图 2024-04-06 214906.png” alt&#x3D;”image” &#x2F;)</p>
 <p>命令窗输入，启动redis-server：</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">./redis-server</span><br></pre></td></tr></table></figure>
 
@@ -330,43 +330,43 @@
 <img src="/images/%24%7Bimg%7D/屏幕截图 2024-04-06 215315.png" alt="image" style="zoom:150%;" />
 </li>
 <li><p>后台启动模式，redis启动后，不会阻挡住linux操作窗口 </p>
-<p>![image](&#x2F;images&#x2F;%24%7Bimg%7D&#x2F;屏幕截图 2024-04-06 220450.png)</p>
+<p>![image](“&#x2F;images&#x2F;%24%7Bimg%7D&#x2F;屏幕截图 2024-04-06 220450.png” alt&#x3D;”image” &#x2F;)</p>
 </li>
 </ul>
 <h5 id="3-1-复制一份redis-conf"><a href="#3-1-复制一份redis-conf" class="headerlink" title="3.1 复制一份redis.conf"></a>3.1 复制一份redis.conf</h5><p>将redis解压后的安装包中 redis.conf 配置文件复制一份到  &#x2F;usr&#x2F;local&#x2F;redis&#x2F;bin（安装自己安装路径）</p>
 <p>命令窗输入：</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cp redis.conf /usr/local/redis/bin</span><br></pre></td></tr></table></figure>
 
-<p>![image](&#x2F;images&#x2F;%24%7Bimg%7D&#x2F;屏幕截图 2024-04-06 214906.png)</p>
+<p>![image](“&#x2F;images&#x2F;%24%7Bimg%7D&#x2F;屏幕截图 2024-04-06 214906.png” alt&#x3D;”image” &#x2F;)</p>
 <h5 id="3-2-修改redis-conf-中配置"><a href="#3-2-修改redis-conf-中配置" class="headerlink" title="3.2 修改redis.conf 中配置"></a>3.2 修改redis.conf 中配置</h5><p>cd 到 &#x2F;usr&#x2F;local&#x2F;redis&#x2F;bin</p>
 <p>命令窗输入：</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vim redis.conf</span><br></pre></td></tr></table></figure>
 
 <p>将下方所示的daemonize no 改为 yes</p>
-<p>![image](&#x2F;images&#x2F;%24%7Bimg%7D&#x2F;屏幕截图 2024-04-06 220118.png)</p>
+<p>![image](“&#x2F;images&#x2F;%24%7Bimg%7D&#x2F;屏幕截图 2024-04-06 220118.png” alt&#x3D;”image” &#x2F;)</p>
 <p>保存退出</p>
 <p>命令窗输入：</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">./redis-server redis.conf</span><br></pre></td></tr></table></figure>
 
-<p>![image](&#x2F;images&#x2F;%24%7Bimg%7D&#x2F;屏幕截图 2024-04-06 220450.png)</p>
+<p>![image](“&#x2F;images&#x2F;%24%7Bimg%7D&#x2F;屏幕截图 2024-04-06 220450.png” alt&#x3D;”image” &#x2F;)</p>
 <h5 id="3-3-确认redis-sevrer启动成功"><a href="#3-3-确认redis-sevrer启动成功" class="headerlink" title="3.3 确认redis-sevrer启动成功"></a>3.3 确认redis-sevrer启动成功</h5><p>（1）通过启动redis-cli 客户端去连接服务器</p>
 <p>bin目录下命令行输入：</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">./redis-cli</span><br></pre></td></tr></table></figure>
 
 <p>如下图所示，则启动成功</p>
-<p>![image](&#x2F;images&#x2F;%24%7Bimg%7D&#x2F;屏幕截图 2024-04-06 220757.png)</p>
+<p>![image](“&#x2F;images&#x2F;%24%7Bimg%7D&#x2F;屏幕截图 2024-04-06 220757.png” alt&#x3D;”image” &#x2F;)</p>
 <p>（2）进程查看</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ps aux|grep redis</span><br></pre></td></tr></table></figure>
 
-<p>![image](&#x2F;images&#x2F;%24%7Bimg%7D&#x2F;屏幕截图 2024-04-06 220935.png)</p>
+<p>![image](“&#x2F;images&#x2F;%24%7Bimg%7D&#x2F;屏幕截图 2024-04-06 220935.png” alt&#x3D;”image” &#x2F;)</p>
 <h5 id="3-4-关闭redis-sevrer"><a href="#3-4-关闭redis-sevrer" class="headerlink" title="3.4 关闭redis-sevrer"></a>3.4 关闭redis-sevrer</h5><p>（1）通过redis-cli客户端发送命令给 redis服务器 进行关闭</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">shutdown</span><br></pre></td></tr></table></figure>
 
-<p>![image](&#x2F;images&#x2F;%24%7Bimg%7D&#x2F;屏幕截图 2024-04-06 221220.png)</p>
+<p>![image](“&#x2F;images&#x2F;%24%7Bimg%7D&#x2F;屏幕截图 2024-04-06 221220.png” alt&#x3D;”image” &#x2F;)</p>
 <p>（2）杀死进程</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">kill -9 进程id</span><br></pre></td></tr></table></figure>
 
-<p>![image](&#x2F;images&#x2F;%24%7Bimg%7D&#x2F;屏幕截图 2024-04-06 221436.png)</p>
+<p>![image](“&#x2F;images&#x2F;%24%7Bimg%7D&#x2F;屏幕截图 2024-04-06 221436.png” alt&#x3D;”image” &#x2F;)</p>
 <h5 id="3-5-指定ip和端口号-去连接服务器"><a href="#3-5-指定ip和端口号-去连接服务器" class="headerlink" title="3.5 指定ip和端口号 去连接服务器"></a>3.5 指定ip和端口号 去连接服务器</h5><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ip addr   // 查询当前Linux系统IP地址</span><br></pre></td></tr></table></figure>
 
 <p>获取ip地址</p>
@@ -380,27 +380,27 @@
 <p>（2）当redis存储的时候，如果存了多次相同key，不同值，后面的值会覆盖之前的</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">set key value</span><br></pre></td></tr></table></figure>
 
-<p>![image](&#x2F;images&#x2F;%24%7Bimg%7D&#x2F;屏幕截图 2024-04-06 222250.png)</p>
+<p>![image](“&#x2F;images&#x2F;%24%7Bimg%7D&#x2F;屏幕截图 2024-04-06 222250.png” alt&#x3D;”image” )</p>
 </li>
 <li><p>获取string的值</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">get key</span><br></pre></td></tr></table></figure>
 
-<p>![image](&#x2F;images&#x2F;%24%7Bimg%7D&#x2F;屏幕截图 2024-04-06 222605.png)</p>
+<p>![image](“&#x2F;images&#x2F;%24%7Bimg%7D&#x2F;屏幕截图 2024-04-06 222605.png” alt&#x3D;”image” )</p>
 </li>
 <li><p>查看当前库所有key名称</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">keys *</span><br></pre></td></tr></table></figure>
 
-<p>![image](&#x2F;images&#x2F;%24%7Bimg%7D&#x2F;屏幕截图 2024-04-06 222724.png)</p>
+<p>![image](“&#x2F;images&#x2F;%24%7Bimg%7D&#x2F;屏幕截图 2024-04-06 222724.png” alt&#x3D;”image” )</p>
 </li>
 <li><p>切换数据库命令</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">select 数字   // 1-15,共16个库</span><br></pre></td></tr></table></figure>
 
-<p>![image](&#x2F;images&#x2F;%24%7Bimg%7D&#x2F;屏幕截图 2024-04-06 222807.png)</p>
+<p>![image](“&#x2F;images&#x2F;%24%7Bimg%7D&#x2F;屏幕截图 2024-04-06 222807.png” alt&#x3D;”image” )</p>
 </li>
 <li><p>删除 redis中数据 </p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">del key</span><br></pre></td></tr></table></figure>
 
-<p>![image](&#x2F;images&#x2F;%24%7Bimg%7D&#x2F;屏幕截图 2024-04-06 223222.png)</p>
+<p>![image](“&#x2F;images&#x2F;%24%7Bimg%7D&#x2F;屏幕截图 2024-04-06 223222.png” alt&#x3D;”image” )</p>
 </li>
 <li><p>清空当前库的所有数据</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">flushdb</span><br></pre></td></tr></table></figure>
@@ -684,7 +684,7 @@
     <span class="post-meta-item-icon">
       <i class="fa fa-chart-area"></i>
     </span>
-    <span title="站点总字数">5k</span>
+    <span title="站点总字数">6k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
