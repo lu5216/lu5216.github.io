@@ -26,34 +26,23 @@
     var CONFIG = {"hostname":"lu5216.github.io","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"manual","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="Git上传项目1、为GitHub账户设置SSH Key1.1 检测是否已生成密钥第一步，检测是否已经生成了密钥，ls出现id_rsa与id_rsa.pub则已生成密钥。  id_rsa与id_rsa.pub可以在目录C:\Users\用户名\.ssh里面找到。">
+  <meta name="description" content="Spring Boot1、相关网站Spring Boot Spring-initializr 阿里云原生应用脚手架 Maven Repository">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Git上传项目">
-<meta property="og:url" content="http://lu5216.github.io/2024/03/04/git%E4%B8%8A%E4%BC%A0%E9%A1%B9%E7%9B%AE/index.html">
+<meta property="og:title" content="Spring Boot">
+<meta property="og:url" content="http://lu5216.github.io/2024/04/20/SpringBoot/index.html">
 <meta property="og:site_name" content="网吧">
-<meta property="og:description" content="Git上传项目1、为GitHub账户设置SSH Key1.1 检测是否已生成密钥第一步，检测是否已经生成了密钥，ls出现id_rsa与id_rsa.pub则已生成密钥。  id_rsa与id_rsa.pub可以在目录C:\Users\用户名\.ssh里面找到。">
+<meta property="og:description" content="Spring Boot1、相关网站Spring Boot Spring-initializr 阿里云原生应用脚手架 Maven Repository">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="http://lu5216.github.io/images/$%7Bimg%7D/20240304-1620.png">
-<meta property="og:image" content="http://lu5216.github.io/images/$%7Bimg%7D/20240304-1633.png">
-<meta property="og:image" content="http://lu5216.github.io/images/%24%7Bimg%7D/20240304-1641.png">
-<meta property="og:image" content="http://lu5216.github.io/images/$%7Bimg%7D/20240304-1643.png">
-<meta property="og:image" content="http://lu5216.github.io/images/%24%7Bimg%7D/20240304-1649.png">
-<meta property="og:image" content="http://lu5216.github.io/images/$%7Bimg%7D/20240304-1651.png">
-<meta property="og:image" content="http://lu5216.github.io/images/$%7Bimg%7D/20240304-1700.png">
-<meta property="og:image" content="http://lu5216.github.io/images/$%7Bimg%7D/20240304-1702.png">
-<meta property="og:image" content="http://lu5216.github.io/images/$%7Bimg%7D/20240304-1710.png">
-<meta property="og:image" content="http://lu5216.github.io/images/%24%7Bimg%7D/20240304-1713.png">
-<meta property="og:image" content="http://lu5216.github.io/images/%24%7Bimg%7D/20240304-1727.png">
-<meta property="og:image" content="http://lu5216.github.io/images/%24%7Bimg%7D/20240304%20-1840.png">
-<meta property="article:published_time" content="2024-03-04T10:55:21.980Z">
-<meta property="article:modified_time" content="2024-03-06T10:59:17.833Z">
+<meta property="og:image" content="http://lu5216.github.io/images/%24%7Bimg%7D/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202024-04-20%20160359.png">
+<meta property="article:published_time" content="2024-04-20T09:56:09.200Z">
+<meta property="article:modified_time" content="2024-04-20T09:55:56.698Z">
 <meta property="article:author" content="醉影独成空">
-<meta property="article:tag" content="Git上传项目">
-<meta property="article:tag" content="Git上传项目常见错误">
+<meta property="article:tag" content="Spring Boot">
+<meta property="article:tag" content="多模块打包">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http://lu5216.github.io/images/$%7Bimg%7D/20240304-1620.png">
+<meta name="twitter:image" content="http://lu5216.github.io/images/%24%7Bimg%7D/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202024-04-20%20160359.png">
 
-<link rel="canonical" href="http://lu5216.github.io/2024/03/04/git%E4%B8%8A%E4%BC%A0%E9%A1%B9%E7%9B%AE/">
+<link rel="canonical" href="http://lu5216.github.io/2024/04/20/SpringBoot/">
 
 
 <script id="page-configurations">
@@ -66,7 +55,7 @@
   };
 </script>
 
-  <title>Git上传项目 | 网吧</title>
+  <title>Spring Boot | 网吧</title>
   
 
 
@@ -221,7 +210,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://lu5216.github.io/2024/03/04/git%E4%B8%8A%E4%BC%A0%E9%A1%B9%E7%9B%AE/">
+    <link itemprop="mainEntityOfPage" href="http://lu5216.github.io/2024/04/20/SpringBoot/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.png">
@@ -234,7 +223,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          Git上传项目
+          Spring Boot
         </h1>
 
         <div class="post-meta">
@@ -245,23 +234,17 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
+              
 
-              <time title="创建时间：2024-03-04 18:55:21" itemprop="dateCreated datePublished" datetime="2024-03-04T18:55:21+08:00">2024-03-04</time>
+              <time title="创建时间：2024-04-20 17:56:09 / 修改时间：17:55:56" itemprop="dateCreated datePublished" datetime="2024-04-20T17:56:09+08:00">2024-04-20</time>
             </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2024-03-06 18:59:17" itemprop="dateModified" datetime="2024-03-06T18:59:17+08:00">2024-03-06</time>
-              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="far fa-folder"></i>
               </span>
               <span class="post-meta-item-text">分类于</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Git/" itemprop="url" rel="index"><span itemprop="name">Git</span></a>
+                  <a href="/categories/Spring-Boot/" itemprop="url" rel="index"><span itemprop="name">Spring Boot</span></a>
                 </span>
             </span>
 
@@ -278,14 +261,14 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>1.3k</span>
+              <span>2.6k</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
                 <i class="far fa-clock"></i>
               </span>
                 <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>1 分钟</span>
+              <span>2 分钟</span>
             </span>
 
         </div>
@@ -297,90 +280,56 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h1 id="Git上传项目"><a href="#Git上传项目" class="headerlink" title="Git上传项目"></a>Git上传项目</h1><h3 id="1、为GitHub账户设置SSH-Key"><a href="#1、为GitHub账户设置SSH-Key" class="headerlink" title="1、为GitHub账户设置SSH Key"></a>1、为GitHub账户设置SSH Key</h3><h5 id="1-1-检测是否已生成密钥"><a href="#1-1-检测是否已生成密钥" class="headerlink" title="1.1 检测是否已生成密钥"></a>1.1 检测是否已生成密钥</h5><p>第一步，检测是否已经生成了密钥，ls出现id_rsa与id_rsa.pub则已生成密钥。</p>
-<p><img src="/images/$%7Bimg%7D/20240304-1620.png" alt="image"></p>
-<p>id_rsa与id_rsa.pub可以在目录C:\Users\用户名\.ssh里面找到。</p>
+        <h1 id="Spring-Boot"><a href="#Spring-Boot" class="headerlink" title="Spring Boot"></a>Spring Boot</h1><h3 id="1、相关网站"><a href="#1、相关网站" class="headerlink" title="1、相关网站"></a>1、相关网站</h3><p><a target="_blank" rel="noopener" href="https://spring.io/projects/spring-boot">Spring Boot</a></p>
+<p><a target="_blank" rel="noopener" href="https://start.spring.io/">Spring-initializr</a></p>
+<p><a target="_blank" rel="noopener" href="https://start.aliyun.com/">阿里云原生应用脚手架</a></p>
+<p><a target="_blank" rel="noopener" href="https://mvnrepository.com/">Maven Repository</a></p>
 <span id="more"></span>
 
-<h5 id="1-2-生成SSH-Key"><a href="#1-2-生成SSH-Key" class="headerlink" title="1.2 生成SSH Key"></a>1.2 生成SSH Key</h5><p>已经有了密钥可以跳过。</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ ssh-keygen -t rsa -C “xxxxxx@qq.com”</span><br></pre></td></tr></table></figure>
-
-<p>可以直接回车生成密钥。</p>
-<p><img src="/images/$%7Bimg%7D/20240304-1633.png" alt="image"></p>
-<p>生成成功后，在目录C:\Users\用户名\.ssh里，打开id_rsa.pub，复制ssh key公钥。</p>
-<h5 id="1-3-为GitHub账号配置SSH-Key"><a href="#1-3-为GitHub账号配置SSH-Key" class="headerlink" title="1.3 为GitHub账号配置SSH Key"></a>1.3 为GitHub账号配置SSH Key</h5><p>点击头像，找到Setting，<strong>打开设置</strong>。</p>
-<img src="/images/%24%7Bimg%7D/20240304-1641.png" alt="image" style="zoom: 50%;" />
-
-<p>找到 <strong>SSH and GPG Keys</strong>，点击 <strong>SSH Keys</strong> 右侧的 <strong>New SSH Key</strong> 新增密钥，填上标题。</p>
-<p><img src="/images/$%7Bimg%7D/20240304-1643.png" alt="image"></p>
-<p>填上标题和密钥，点击 <strong>Add SSH Key</strong>。</p>
-<img src="/images/%24%7Bimg%7D/20240304-1649.png" alt="image" style="zoom:50%;" />
-
-<p>验证身份后，github账号的SSH Keys配置完成。</p>
-<p><img src="/images/$%7Bimg%7D/20240304-1651.png" alt="image"></p>
-<h3 id="2、上传本地项目到GitHub"><a href="#2、上传本地项目到GitHub" class="headerlink" title="2、上传本地项目到GitHub"></a>2、上传本地项目到GitHub</h3><h5 id="2-1-建立本地仓库"><a href="#2-1-建立本地仓库" class="headerlink" title="2.1 建立本地仓库"></a>2.1 建立本地仓库</h5><p>到自定文件夹下，鼠标右击进入 git bash，执行指令：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git init</span><br></pre></td></tr></table></figure>
-
-<p><img src="/images/$%7Bimg%7D/20240304-1700.png" alt="image"></p>
-<p>初始化成功后，项目里多出一个隐藏文件夹 .git</p>
-<p><img src="/images/$%7Bimg%7D/20240304-1702.png" alt="image"></p>
-<p>将需要提交上传的项目放到该目录下</p>
-<p>将所有文件添加到仓库，执行指令：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git add .</span><br></pre></td></tr></table></figure>
-
-<p>将文件提交到仓库，双引号内是提交注释，执行指令：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git commit -m &quot;提交文件&quot;</span><br></pre></td></tr></table></figure>
-
-<p><img src="/images/$%7Bimg%7D/20240304-1710.png" alt="image"></p>
-<p>到此，本地仓库创建完成。</p>
-<h5 id="2-2-关联GitHub"><a href="#2-2-关联GitHub" class="headerlink" title="2.2 关联GitHub"></a>2.2 关联GitHub</h5><p>到GitHub创建的项目下复制SSH地址。</p>
-<img src="/images/%24%7Bimg%7D/20240304-1713.png" alt="image" style="zoom:50%;" />
-
-<p>执行指令：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git remote add origin git@github.com:lu5216/subject.git</span><br></pre></td></tr></table></figure>
-
-<h5 id="2-3-上传本地文件"><a href="#2-3-上传本地文件" class="headerlink" title="2.3 上传本地文件"></a>2.3 上传本地文件</h5><p>执行指令：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git push -u origin master</span><br></pre></td></tr></table></figure>
-
-<p>或</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git push -u origin master -f</span><br></pre></td></tr></table></figure>
+<p>更改新建模块 Spring initializr 服务器，解决无法使用Java8的问题:</p>
+<img src="/images/%24%7Bimg%7D/屏幕截图 2024-04-20 160359.png" alt="image" style="zoom: 50%;" />
 
 
 
+<h3 id="2、多模块打包"><a href="#2、多模块打包" class="headerlink" title="2、多模块打包"></a>2、多模块打包</h3><p>注意：多模块项目仅仅需要在启动类所在的模块添加打包插件即可！！不要在父类添加打包插件，因为那样会导致全部子模块都使用spring-boot-maven-plugin的方式来打包。</p>
+<p>1、打开设置-编辑器-文件编码，将3个编码全改为utf-8</p>
+<p>2、执行package前先执行clean</p>
+<p>3、添加build</p>
+<p>参考 <a target="_blank" rel="noopener" href="https://blog.csdn.net/qq_42875345/article/details/110790933">大佬的文章</a></p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!-- 启动类所在的模块 --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">build</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">plugins</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">plugin</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.springframework.boot<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>spring-boot-maven-plugin<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">configuration</span>&gt;</span></span><br><span class="line">                <span class="comment">&lt;!-- 指定该Main Class为全局的唯一入口 --&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">mainClass</span>&gt;</span>com.yq.news.ZuulApp<span class="tag">&lt;/<span class="name">mainClass</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">layout</span>&gt;</span>ZIP<span class="tag">&lt;/<span class="name">layout</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;/<span class="name">configuration</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">executions</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">execution</span>&gt;</span></span><br><span class="line">                    <span class="tag">&lt;<span class="name">goals</span>&gt;</span></span><br><span class="line">                        <span class="tag">&lt;<span class="name">goal</span>&gt;</span>repackage<span class="tag">&lt;/<span class="name">goal</span>&gt;</span><span class="comment">&lt;!--可以把依赖的包都打包到生成的Jar包中--&gt;</span></span><br><span class="line">                    <span class="tag">&lt;/<span class="name">goals</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;/<span class="name">execution</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;/<span class="name">executions</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">plugin</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">plugins</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">build</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>4、在target中找到打包好的项目，该路径下cmd打开命令提示窗，运行</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">java -jar 项目名.jar</span><br></pre></td></tr></table></figure>
+
+<p>多环境开发，选择不同环境运行（带参数启动）</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">java -jar 项目名.jar --spring.profiles.active=环境名</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">java -jar 项目名.jar --server.port=端口号</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">java -jar 项目名.jar --server.port=端口号 --spring.profiles.active=环境名</span><br></pre></td></tr></table></figure>
 
 
 
+<h3 id="3、配置文件"><a href="#3、配置文件" class="headerlink" title="3、配置文件"></a>3、配置文件</h3><h5 id="3-1-三种配置文件的优先级"><a href="#3-1-三种配置文件的优先级" class="headerlink" title="3.1 三种配置文件的优先级"></a>3.1 三种配置文件的优先级</h5><p>properties &gt; yml &gt; yaml</p>
+<h5 id="3-2-日志级别-yml"><a href="#3-2-日志级别-yml" class="headerlink" title="3.2 日志级别 (.yml)"></a>3.2 日志级别 (.yml)</h5><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">logging:</span></span><br><span class="line">  <span class="attr">level:</span></span><br><span class="line">    <span class="attr">root:</span> <span class="string">warn/debug/error/fatal/info/off/trace</span></span><br></pre></td></tr></table></figure>
 
+<h5 id="3-3-数据读取-yml"><a href="#3-3-数据读取-yml" class="headerlink" title="3.3 数据读取 (.yml)"></a>3.3 数据读取 (.yml)</h5><p>1、配置文件</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">server:</span></span><br><span class="line">  <span class="attr">port:</span> <span class="number">8080</span></span><br><span class="line"></span><br><span class="line"><span class="attr">enterprise:</span></span><br><span class="line">  <span class="attr">name:</span> <span class="string">jack</span></span><br><span class="line">  <span class="attr">age:</span> <span class="number">15</span></span><br><span class="line">  <span class="attr">tel:</span> <span class="number">123456</span></span><br><span class="line">  <span class="attr">subject:</span></span><br><span class="line">    <span class="bullet">-</span> <span class="string">java</span></span><br><span class="line">    <span class="bullet">-</span> <span class="string">vue</span></span><br><span class="line">    <span class="bullet">-</span> <span class="string">大数据</span></span><br></pre></td></tr></table></figure>
 
+<p>2、实体类</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Component</span></span><br><span class="line"><span class="meta">@ConfigurationProperties(prefix = &quot;enterprise&quot;)</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Enterprise</span> &#123;</span><br><span class="line">    <span class="keyword">private</span> String name;</span><br><span class="line">    <span class="keyword">private</span> Integer age;</span><br><span class="line">    <span class="keyword">private</span> String tel;</span><br><span class="line">    <span class="keyword">private</span> String[] subject;</span><br><span class="line">    </span><br><span class="line">    <span class="comment">// Get、Set方法</span></span><br><span class="line">    <span class="comment">// toString方法</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<h3 id="3、各种上传问题"><a href="#3、各种上传问题" class="headerlink" title="3、各种上传问题"></a>3、各种上传问题</h3><h5 id="3-1-当上传的文件过大时（超过100MB），报错如下："><a href="#3-1-当上传的文件过大时（超过100MB），报错如下：" class="headerlink" title="3.1 当上传的文件过大时（超过100MB），报错如下："></a>3.1 当上传的文件过大时（超过100MB），报错如下：</h5><img src="/images/%24%7Bimg%7D/20240304-1727.png"/>
+<p>3、controller表现层</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@RestController</span></span><br><span class="line"><span class="meta">@RequestMapping(&quot;/books&quot;)</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">BookController</span> &#123;</span><br><span class="line">    <span class="comment">// 方式1</span></span><br><span class="line">    <span class="meta">@Autowired</span></span><br><span class="line">    <span class="keyword">private</span> Environment environment;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 方式2</span></span><br><span class="line">    <span class="meta">@Autowired</span></span><br><span class="line">    <span class="keyword">private</span> Enterprise enterprise;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@GetMapping(&quot;/&#123;id&#125;&quot;)</span></span><br><span class="line">    <span class="keyword">public</span> String <span class="title function_">getById</span><span class="params">(<span class="meta">@PathVariable</span> <span class="type">int</span> id)</span> &#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;------- 方式1 -------&quot;</span>);</span><br><span class="line">        <span class="type">String</span> <span class="variable">s1</span> <span class="operator">=</span> environment.getProperty(<span class="string">&quot;enterprise.age&quot;</span>);</span><br><span class="line">        <span class="type">String</span> <span class="variable">s2</span> <span class="operator">=</span> environment.getProperty(<span class="string">&quot;enterprise.subject[1]&quot;</span>);</span><br><span class="line">        System.out.println(<span class="string">&quot;s1 = &quot;</span> + s1 + <span class="string">&quot;, s2 = &quot;</span> + s2);</span><br><span class="line"></span><br><span class="line">        System.out.println(<span class="string">&quot;------- 方式2 -------&quot;</span>);</span><br><span class="line">        System.out.println(enterprise);</span><br><span class="line">        <span class="keyword">return</span> <span class="string">&quot;Hello, SpringBoot!&quot;</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<p>解决方法：</p>
-<p>下载 <a target="_blank" rel="noopener" href="https://git-lfs.com/">Git-LFS</a> ，并安装到git目录下D:\Git\Git\bin\Git LFS。</p>
-<p>进给安装后的目录，打开git bash，执行指令（这个命令只需执行这一次即可）：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git lfs install  #安装大文件上传应用 </span><br></pre></td></tr></table></figure>
+<h5 id="3-4-多环境开发-yml"><a href="#3-4-多环境开发-yml" class="headerlink" title="3.4 多环境开发 (.yml)"></a>3.4 多环境开发 (.yml)</h5><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 设置启用的环境</span></span><br><span class="line"><span class="attr">spring:</span></span><br><span class="line">  <span class="attr">profiles:</span></span><br><span class="line">    <span class="attr">active:</span> <span class="string">dev</span></span><br><span class="line"><span class="meta">---</span></span><br><span class="line"><span class="attr">server:</span></span><br><span class="line">  <span class="attr">port:</span> <span class="number">8080</span></span><br><span class="line"><span class="attr">spring:</span></span><br><span class="line">  <span class="attr">config:</span></span><br><span class="line">    <span class="attr">activate:</span></span><br><span class="line">      <span class="attr">on-profile:</span> <span class="string">dev</span></span><br><span class="line"><span class="meta">---</span></span><br><span class="line"><span class="attr">server:</span></span><br><span class="line">  <span class="attr">port:</span> <span class="number">8081</span></span><br><span class="line"><span class="attr">spring:</span></span><br><span class="line">  <span class="attr">config:</span></span><br><span class="line">    <span class="attr">activate:</span></span><br><span class="line">      <span class="attr">on-profile:</span> <span class="string">pro</span></span><br><span class="line"><span class="meta">---</span></span><br><span class="line"><span class="attr">server:</span></span><br><span class="line">  <span class="attr">port:</span> <span class="number">8082</span></span><br><span class="line"><span class="attr">spring:</span></span><br><span class="line">  <span class="attr">config:</span></span><br><span class="line">    <span class="attr">activate:</span></span><br><span class="line">      <span class="attr">on-profile:</span> <span class="string">test</span></span><br></pre></td></tr></table></figure>
 
-<p>到仓库目录，打开 GitBash，追踪需要上传的大文件</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git lfs track *  #追踪要上传的大文件，*表示路径下的所有文件 </span><br></pre></td></tr></table></figure>
-
-<p>添加要上传的文件属性</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git add .gitattributes   #添加先上传的属性文件</span><br></pre></td></tr></table></figure>
-
-<p>上传属性文件</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git commit -m &quot;first commit&quot;   #添加属性文件上传的说明</span><br><span class="line">git remote add origin git@github.com:lu5216/subject.git   #建立本地和Github仓库的链接 </span><br><span class="line">git push -u origin main        #上传属性文件</span><br></pre></td></tr></table></figure>
-
-<p>接下来按常规步骤</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git add .                      #添加要上传的大文件</span><br><span class="line">git commit -m &quot;Git LFS commit&quot; #添加大文件上传的说明 </span><br><span class="line">git push origin master         #上传大文件</span><br></pre></td></tr></table></figure>
-
-<h5 id="3-2、error-failed-to-push-some-refs-to"><a href="#3-2、error-failed-to-push-some-refs-to" class="headerlink" title="3.2、error: failed to push some refs to"></a>3.2、error: failed to push some refs to</h5><img src="/images/%24%7Bimg%7D/20240304 -1840.png"/>
-
-<p>问题原因：远程库与本地库不一致造成的</p>
-<p>解决办法：将远程库更新合并到本地库，执行命令：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git pull --rebase origin main</span><br></pre></td></tr></table></figure>
-
-<p>最后执行命令：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git push -u origin main</span><br></pre></td></tr></table></figure>
-
+<h5 id="3-5-SpringBoot中4级配置文件"><a href="#3-5-SpringBoot中4级配置文件" class="headerlink" title="3.5 SpringBoot中4级配置文件"></a>3.5 SpringBoot中4级配置文件</h5><p>1级：file : config&#x2F;application.yml</p>
+<p>2级：file : application.yml</p>
+<p>3级：classpath : config&#x2F;application.yml</p>
+<p>4级：classpath : application.yml</p>
+<p>1、2级留做系统打包后设置通用属性</p>
+<p>3、4级用于系统开发阶段设置通用属性</p>
 
     </div>
 
@@ -426,7 +375,7 @@
   </li>
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
-    <a href="http://lu5216.github.io/2024/03/04/git%E4%B8%8A%E4%BC%A0%E9%A1%B9%E7%9B%AE/" title="Git上传项目">http://lu5216.github.io/2024/03/04/git上传项目/</a>
+    <a href="http://lu5216.github.io/2024/04/20/SpringBoot/" title="Spring Boot">http://lu5216.github.io/2024/04/20/SpringBoot/</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
@@ -466,8 +415,8 @@
 
       <footer class="post-footer">
           <div class="post-tags">
-              <a href="/tags/Git%E4%B8%8A%E4%BC%A0%E9%A1%B9%E7%9B%AE/" rel="tag"># Git上传项目</a>
-              <a href="/tags/Git%E4%B8%8A%E4%BC%A0%E9%A1%B9%E7%9B%AE%E5%B8%B8%E8%A7%81%E9%94%99%E8%AF%AF/" rel="tag"># Git上传项目常见错误</a>
+              <a href="/tags/Spring-Boot/" rel="tag"># Spring Boot</a>
+              <a href="/tags/%E5%A4%9A%E6%A8%A1%E5%9D%97%E6%89%93%E5%8C%85/" rel="tag"># 多模块打包</a>
           </div>
 
         
@@ -476,13 +425,10 @@
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/2024/02/26/hello-blog/" rel="prev" title="我的博客">
-      <i class="fa fa-chevron-left"></i> 我的博客
+    <a href="/2024/04/18/maven/" rel="prev" title="maven">
+      <i class="fa fa-chevron-left"></i> maven
     </a></div>
-      <div class="post-nav-item">
-    <a href="/2024/04/06/redis%E5%9F%BA%E7%A1%80-01/" rel="next" title="redis基础-01">
-      redis基础-01 <i class="fa fa-chevron-right"></i>
-    </a></div>
+      <div class="post-nav-item"></div>
     </div>
       </footer>
     
@@ -566,7 +512,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Git%E4%B8%8A%E4%BC%A0%E9%A1%B9%E7%9B%AE"><span class="nav-number">1.</span> <span class="nav-text">Git上传项目</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1%E3%80%81%E4%B8%BAGitHub%E8%B4%A6%E6%88%B7%E8%AE%BE%E7%BD%AESSH-Key"><span class="nav-number">1.0.1.</span> <span class="nav-text">1、为GitHub账户设置SSH Key</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#1-1-%E6%A3%80%E6%B5%8B%E6%98%AF%E5%90%A6%E5%B7%B2%E7%94%9F%E6%88%90%E5%AF%86%E9%92%A5"><span class="nav-number">1.0.1.0.1.</span> <span class="nav-text">1.1 检测是否已生成密钥</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#1-2-%E7%94%9F%E6%88%90SSH-Key"><span class="nav-number">1.0.1.0.2.</span> <span class="nav-text">1.2 生成SSH Key</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#1-3-%E4%B8%BAGitHub%E8%B4%A6%E5%8F%B7%E9%85%8D%E7%BD%AESSH-Key"><span class="nav-number">1.0.1.0.3.</span> <span class="nav-text">1.3 为GitHub账号配置SSH Key</span></a></li></ol></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2%E3%80%81%E4%B8%8A%E4%BC%A0%E6%9C%AC%E5%9C%B0%E9%A1%B9%E7%9B%AE%E5%88%B0GitHub"><span class="nav-number">1.0.2.</span> <span class="nav-text">2、上传本地项目到GitHub</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#2-1-%E5%BB%BA%E7%AB%8B%E6%9C%AC%E5%9C%B0%E4%BB%93%E5%BA%93"><span class="nav-number">1.0.2.0.1.</span> <span class="nav-text">2.1 建立本地仓库</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#2-2-%E5%85%B3%E8%81%94GitHub"><span class="nav-number">1.0.2.0.2.</span> <span class="nav-text">2.2 关联GitHub</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#2-3-%E4%B8%8A%E4%BC%A0%E6%9C%AC%E5%9C%B0%E6%96%87%E4%BB%B6"><span class="nav-number">1.0.2.0.3.</span> <span class="nav-text">2.3 上传本地文件</span></a></li></ol></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3%E3%80%81%E5%90%84%E7%A7%8D%E4%B8%8A%E4%BC%A0%E9%97%AE%E9%A2%98"><span class="nav-number">1.0.3.</span> <span class="nav-text">3、各种上传问题</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#3-1-%E5%BD%93%E4%B8%8A%E4%BC%A0%E7%9A%84%E6%96%87%E4%BB%B6%E8%BF%87%E5%A4%A7%E6%97%B6%EF%BC%88%E8%B6%85%E8%BF%87100MB%EF%BC%89%EF%BC%8C%E6%8A%A5%E9%94%99%E5%A6%82%E4%B8%8B%EF%BC%9A"><span class="nav-number">1.0.3.0.1.</span> <span class="nav-text">3.1 当上传的文件过大时（超过100MB），报错如下：</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#3-2%E3%80%81error-failed-to-push-some-refs-to"><span class="nav-number">1.0.3.0.2.</span> <span class="nav-text">3.2、error: failed to push some refs to</span></a></li></ol></li></ol></li></ol></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Spring-Boot"><span class="nav-number">1.</span> <span class="nav-text">Spring Boot</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1%E3%80%81%E7%9B%B8%E5%85%B3%E7%BD%91%E7%AB%99"><span class="nav-number">1.0.1.</span> <span class="nav-text">1、相关网站</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2%E3%80%81%E5%A4%9A%E6%A8%A1%E5%9D%97%E6%89%93%E5%8C%85"><span class="nav-number">1.0.2.</span> <span class="nav-text">2、多模块打包</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3%E3%80%81%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6"><span class="nav-number">1.0.3.</span> <span class="nav-text">3、配置文件</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#3-1-%E4%B8%89%E7%A7%8D%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E7%9A%84%E4%BC%98%E5%85%88%E7%BA%A7"><span class="nav-number">1.0.3.0.1.</span> <span class="nav-text">3.1 三种配置文件的优先级</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#3-2-%E6%97%A5%E5%BF%97%E7%BA%A7%E5%88%AB-yml"><span class="nav-number">1.0.3.0.2.</span> <span class="nav-text">3.2 日志级别 (.yml)</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#3-3-%E6%95%B0%E6%8D%AE%E8%AF%BB%E5%8F%96-yml"><span class="nav-number">1.0.3.0.3.</span> <span class="nav-text">3.3 数据读取 (.yml)</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#3-4-%E5%A4%9A%E7%8E%AF%E5%A2%83%E5%BC%80%E5%8F%91-yml"><span class="nav-number">1.0.3.0.4.</span> <span class="nav-text">3.4 多环境开发 (.yml)</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#3-5-SpringBoot%E4%B8%AD4%E7%BA%A7%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6"><span class="nav-number">1.0.3.0.5.</span> <span class="nav-text">3.5 SpringBoot中4级配置文件</span></a></li></ol></li></ol></li></ol></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
